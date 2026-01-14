@@ -1,0 +1,397 @@
+[
+  {
+    "ContainingType": "WebApi.Controllers.AdultoController",
+    "Method": "GetById",
+    "RelativePath": "api/Adulto/buscar_adulto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AdultoController",
+    "Method": "Create",
+    "RelativePath": "api/Adulto/crear_adulto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adultoDTO",
+        "Type": "Aplication.DTOs.AdultoDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AdultoController",
+    "Method": "Update",
+    "RelativePath": "api/Adulto/editar_adulto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "adultoDTO",
+        "Type": "Aplication.DTOs.AdultoDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AdultoController",
+    "Method": "Delete",
+    "RelativePath": "api/Adulto/eliminar_adulto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AdultoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Adulto/listar_adultos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaEnfermeriaController",
+    "Method": "GetById",
+    "RelativePath": "api/FichaEnfermeria/buscar_ficha_enfermeria/{CodEnf}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CodEnf",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaEnfermeriaController",
+    "Method": "Create",
+    "RelativePath": "api/FichaEnfermeria/crear_ficha_enfermeria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaEnfermeriaDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaEnfermeriaController",
+    "Method": "Update",
+    "RelativePath": "api/FichaEnfermeria/editar_ficha_enfermeria/{CodEnf}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CodEnf",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaEnfermeriaDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaEnfermeriaController",
+    "Method": "Delete",
+    "RelativePath": "api/FichaEnfermeria/eliminar_ficha_enfermeria/{CodEnf}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CodEnf",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaEnfermeriaController",
+    "Method": "GetAll",
+    "RelativePath": "api/FichaEnfermeria/listar_fichas_enfermeria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaFisioterapiaController",
+    "Method": "GetById",
+    "RelativePath": "api/FichaFisioterapia/buscar_ficha_fisioterapia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaFisioterapiaController",
+    "Method": "Create",
+    "RelativePath": "api/FichaFisioterapia/crear_ficha_fisioterapia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaFisioterapiaDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaFisioterapiaController",
+    "Method": "Update",
+    "RelativePath": "api/FichaFisioterapia/editar_ficha_fisioterapia/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaFisioterapiaDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaFisioterapiaController",
+    "Method": "Delete",
+    "RelativePath": "api/FichaFisioterapia/eliminar_ficha_fisioterapia/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaFisioterapiaController",
+    "Method": "GetAll",
+    "RelativePath": "api/FichaFisioterapia/listar_fichas_fisioterapia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaOrientacionController",
+    "Method": "GetById",
+    "RelativePath": "api/FichaOrientacion/buscar_ficha_orientacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaOrientacionController",
+    "Method": "Create",
+    "RelativePath": "api/FichaOrientacion/crear_ficha_orientacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaOrientacionDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaOrientacionController",
+    "Method": "Update",
+    "RelativePath": "api/FichaOrientacion/editar_ficha_orientacion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaOrientacionDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaOrientacionController",
+    "Method": "Delete",
+    "RelativePath": "api/FichaOrientacion/eliminar_ficha_orientacion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaOrientacionController",
+    "Method": "GetAll",
+    "RelativePath": "api/FichaOrientacion/listar_fichas_orientacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaProteccionController",
+    "Method": "GetById",
+    "RelativePath": "api/FichaProteccion/buscar_ficha_proteccion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaProteccionController",
+    "Method": "Create",
+    "RelativePath": "api/FichaProteccion/crear_ficha_proteccion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaProteccionDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaProteccionController",
+    "Method": "Update",
+    "RelativePath": "api/FichaProteccion/editar_ficha_proteccion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "fichaDTO",
+        "Type": "Aplication.DTOs.FichaProteccionDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaProteccionController",
+    "Method": "Delete",
+    "RelativePath": "api/FichaProteccion/eliminar_ficha_proteccion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.FichaProteccionController",
+    "Method": "GetAll",
+    "RelativePath": "api/FichaProteccion/listar_fichas_proteccion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

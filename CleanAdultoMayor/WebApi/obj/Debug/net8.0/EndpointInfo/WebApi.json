@@ -1,0 +1,879 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Adulto/listar_adultos": {
+      "get": {
+        "tags": [
+          "Adulto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adulto/buscar_adulto/{id}": {
+      "get": {
+        "tags": [
+          "Adulto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adulto/crear_adulto": {
+      "post": {
+        "tags": [
+          "Adulto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdultoDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdultoDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdultoDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adulto/editar_adulto/{id}": {
+      "put": {
+        "tags": [
+          "Adulto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdultoDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdultoDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdultoDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adulto/eliminar_adulto/{id}": {
+      "delete": {
+        "tags": [
+          "Adulto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaEnfermeria/listar_fichas_enfermeria": {
+      "get": {
+        "tags": [
+          "FichaEnfermeria"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaEnfermeria/buscar_ficha_enfermeria/{CodEnf}": {
+      "get": {
+        "tags": [
+          "FichaEnfermeria"
+        ],
+        "parameters": [
+          {
+            "name": "CodEnf",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaEnfermeria/crear_ficha_enfermeria": {
+      "post": {
+        "tags": [
+          "FichaEnfermeria"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaEnfermeriaDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaEnfermeriaDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaEnfermeriaDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaEnfermeria/editar_ficha_enfermeria/{CodEnf}": {
+      "put": {
+        "tags": [
+          "FichaEnfermeria"
+        ],
+        "parameters": [
+          {
+            "name": "CodEnf",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaEnfermeriaDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaEnfermeriaDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaEnfermeriaDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaEnfermeria/eliminar_ficha_enfermeria/{CodEnf}": {
+      "delete": {
+        "tags": [
+          "FichaEnfermeria"
+        ],
+        "parameters": [
+          {
+            "name": "CodEnf",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaFisioterapia/listar_fichas_fisioterapia": {
+      "get": {
+        "tags": [
+          "FichaFisioterapia"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaFisioterapia/buscar_ficha_fisioterapia/{id}": {
+      "get": {
+        "tags": [
+          "FichaFisioterapia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaFisioterapia/crear_ficha_fisioterapia": {
+      "post": {
+        "tags": [
+          "FichaFisioterapia"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaFisioterapiaDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaFisioterapiaDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaFisioterapiaDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaFisioterapia/editar_ficha_fisioterapia/{id}": {
+      "put": {
+        "tags": [
+          "FichaFisioterapia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaFisioterapiaDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaFisioterapiaDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaFisioterapiaDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaFisioterapia/eliminar_ficha_fisioterapia/{id}": {
+      "delete": {
+        "tags": [
+          "FichaFisioterapia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaOrientacion/listar_fichas_orientacion": {
+      "get": {
+        "tags": [
+          "FichaOrientacion"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaOrientacion/buscar_ficha_orientacion/{id}": {
+      "get": {
+        "tags": [
+          "FichaOrientacion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaOrientacion/crear_ficha_orientacion": {
+      "post": {
+        "tags": [
+          "FichaOrientacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaOrientacionDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaOrientacionDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaOrientacionDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaOrientacion/editar_ficha_orientacion/{id}": {
+      "put": {
+        "tags": [
+          "FichaOrientacion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaOrientacionDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaOrientacionDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaOrientacionDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaOrientacion/eliminar_ficha_orientacion/{id}": {
+      "delete": {
+        "tags": [
+          "FichaOrientacion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaProteccion/listar_fichas_proteccion": {
+      "get": {
+        "tags": [
+          "FichaProteccion"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaProteccion/buscar_ficha_proteccion/{id}": {
+      "get": {
+        "tags": [
+          "FichaProteccion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaProteccion/crear_ficha_proteccion": {
+      "post": {
+        "tags": [
+          "FichaProteccion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaProteccionDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaProteccionDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaProteccionDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaProteccion/editar_ficha_proteccion/{id}": {
+      "put": {
+        "tags": [
+          "FichaProteccion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaProteccionDTOs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaProteccionDTOs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FichaProteccionDTOs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FichaProteccion/eliminar_ficha_proteccion/{id}": {
+      "delete": {
+        "tags": [
+          "FichaProteccion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Adulto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nombres": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellidos": {
+            "type": "string",
+            "nullable": true
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNac": {
+            "type": "string",
+            "nullable": true
+          },
+          "edad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoCivil": {
+            "type": "string",
+            "nullable": true
+          },
+          "discapacidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "domicilio": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adultos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adulto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdultoDTOs": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nombres": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellidos": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNac": {
+            "type": "string",
+            "nullable": true
+          },
+          "edad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoCivil": {
+            "type": "string",
+            "nullable": true
+          },
+          "domicilio": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FichaEnfermeriaDTOs": {
+        "type": "object",
+        "properties": {
+          "codEnf": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "temperatura": {
+            "type": "string",
+            "nullable": true
+          },
+          "tratamiento": {
+            "type": "string",
+            "nullable": true
+          },
+          "pesoTalla": {
+            "type": "string",
+            "nullable": true
+          },
+          "idAdulto": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "adulto": {
+            "$ref": "#/components/schemas/Adulto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FichaFisioterapiaDTOs": {
+        "type": "object",
+        "properties": {
+          "codFis": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fechaProgramacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "numeroSesiones": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "motivoConsulta": {
+            "type": "string",
+            "nullable": true
+          },
+          "equiposEmpleados": {
+            "type": "string",
+            "nullable": true
+          },
+          "idAdulto": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "adulto": {
+            "$ref": "#/components/schemas/Adulto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FichaOrientacionDTOs": {
+        "type": "object",
+        "properties": {
+          "codOri": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fechaOrientacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoOrientacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "idAdulto": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "adulto": {
+            "$ref": "#/components/schemas/Adulto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FichaProteccionDTOs": {
+        "type": "object",
+        "properties": {
+          "codPro": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fechaProteccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoProteccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "idAdulto": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "adulto": {
+            "$ref": "#/components/schemas/Adulto"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

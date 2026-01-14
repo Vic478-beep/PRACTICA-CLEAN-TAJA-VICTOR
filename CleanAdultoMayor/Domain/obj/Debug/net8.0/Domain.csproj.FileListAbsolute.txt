@@ -1,0 +1,15 @@
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\bin\Debug\net8.0\Domain.dll
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\bin\Debug\net8.0\Domain.pdb
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.dll
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.pdb
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+C:\UPDS\Modalidad de Grado - Examen\Area 3 Diciembre-Enero\Proyectos VS\CleanAdultoMayor\Domain\obj\Debug\net8.0\ref\Domain.dll
