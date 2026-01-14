@@ -1,0 +1,145 @@
+:root {
+  --primary-orange: #ff6b00;     
+  --dark-orange: #e65100;       
+  --light-orange: #fff3e0;       
+  --text-dark: #2d3436;          
+  --sidebar-width: 260px;
+}
+
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: linear-gradient(180deg, white 0%, #ff9e42 100%);
+  color: black;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.sidebar-header {
+  padding: 30px 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-menu {
+  padding-top: 20px;
+  flex-grow: 1;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 15px 25px;
+  text-align: left;
+  color: black;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-button:hover {
+  background-color: rgba(255,255,255,0.2);
+  padding-left: 30px; 
+}
+
+.nav-button.active {
+  background-color: white;
+  color: var(--primary-orange);
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 20px 0 0 20px;
+  margin-left: 10px;
+  width: calc(100% - 10px);
+}
+
+/* Área Principal */
+.main-content {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  padding: 40px;
+  background-color: #f4f6f9;
+}
+
+.card-custom {
+  background: white;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.card-header-orange {
+  background-color: var(--primary-orange);
+  color: white;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.btn-orange {
+  background-color: var(--primary-orange);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-orange:hover {
+  background-color: var(--dark-orange);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+}
+
+.btn-outline-orange {
+  border: 2px solid var(--primary-orange);
+  color: var(--primary-orange);
+  background: transparent;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.btn-outline-orange:hover {
+  background-color: var(--primary-orange);
+  color: white;
+}
+
+.table-custom {
+  margin-bottom: 0;
+}
+.table-custom thead {
+  background-color: var(--light-orange);
+  color: var(--dark-orange);
+}
+.table-custom th {
+  border-bottom: 2px solid var(--primary-orange);
+  padding: 15px;
+}
+.table-custom td {
+  padding: 15px;
+  vertical-align: middle;
+}
